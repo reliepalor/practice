@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+   
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+    font-family:'Montserrat';
+}
+body{
+    background-color: rgb(240, 240, 240);
+}
+.body{
+  
+    height: 100vh;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    background-image: url('/background-images/bamboo.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.header li{
+    
+    list-style: none;
+    display: inline-block;
+}
+.header a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+.links a:hover{
+   color: orange;
+}
+#csu-logo img{
+    width: 45px;
+    height: 40px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transition: 0.2s all ease-in-out;
+    text-shadow: #000000 0.5px 0.5px 5px;
+    position: fixed;
+    z-index: 1;
+    padding: 0.7rem 2rem;
+}
+.header:hover{
+    background-color: #7f7f7f;
+    
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo img{
+    display: none;
+    display: inline-block;
+}
+.navbar .logo a{
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+.links li a{
+    transition: font-size 0.5s ease;
+    font-size: 1.2rem;
+}
+.navbar .toggle-btn{
+    columns: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.toggle-btn{
+    color: #fff;
+}
+.action-btn{
+    background-color: rgb(0, 132, 255);
+    color: #fff;
+    padding: 0.4rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    transition:0.2s;
+    cursor: pointer;
+}
+.action-btn:hover{
+    scale: 1.05;
+    background-color: rgb(0, 118, 228);
+}
+.action-btn:active{
+    scale: 1.1;
+    background-color:  rgb(24, 143, 255);
+}
+/*HERO*/
+.intro-container{
+    display: flex;
+    justify-content: flex-start;
+    height: 50vh;
+    color: white;
+}
+.article-div{
+    margin-top: 7%;
+    width: 80%;
+}
+.article1 , .article2 {
+    text-shadow: #000000 0px 5px 5px;
+   
+   
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.article1 p{
+    transition: font-size 0.5s ease;
+    margin: 6% 0 0 7%;
+}
+.article2 p{
+    transition: font-size 0.5s ease;
+    margin-left: 7%;
+}
+
+.article1{
+   
+    font-size: 4rem;
+    font-weight: bold;
+}
+.article2{
+    padding: 10px;
+    width: auto;
+    text-shadow: #000000 0 2px 5px;
+    background-color: rgba(127, 127, 127, 0.1);
+    backdrop-filter: blur(50%);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.logo-div{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 14% 0 0 3%;
+}
+.csulogo img{
+    transition: 1s;
+}
+.csulogo img:hover{
+    scale: 1.1;
+}
+/*WHY CSU*/
+.learn{
+    background-color: #e7e7e7;
+    padding:3% 0;
+    display: flex;
+    justify-content: center;
+}
+.learn article{
+    display: flex;
+    justify-content: space-evenly
+}
+.learning-img img{
+    width: 30rem;
+
+}
+.learning-info{
+    width: 40%;
+    font-family: 'Montserrat';
+    line-height: 25px;
+}
+.learning-info h2{
+    margin:2% 0 7% 0;
+    font-size: 50px;
+    color: #2f2f2f;
+}
+/* CSS for fade-in effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*COURSES - LOGO*/
+.logo-container{
+   display: grid;
+   place-items: center;
+     text-align: center;
+ }
+ .logo-container p{
+     margin: 1%;
+     font-weight: 500;
+     font-family:'Montserrat';
+ }
+ .logo{ 
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(6,auto);
+ }
+ .logo img{
+     width: 90px;
+ }
+ .logo-img img{
+    padding: 0 10px;
+    transition: 0.5s;
+ }
+ .logo-img img:hover{
+    scale: 1.1;
+ }
+ .border{
+    margin-left: 3%;
+     border: 1px solid rgb(200, 200, 200);
+     width: 95%;
+ }
+/*COURSE*/
+ .explore{
+    margin: 1% 0 4% 0;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 3rem;
+}
+ .course-container{
+    
+    margin: 1% 1% 2% 1%;
+    display: grid;
+    place-items: center;
+}
+.courses{
+   border: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.cics,.cted,.ccje,.chm,.cbea,.ca{
+   
+    padding:0 1px;
+    margin:0 0 0 1%;
+    width: 30rem;
+    border-radius: 5px;
+    height: 33rem;
+}
+.course-img img{
+    border-radius: 5px 5px 0 0 ;
+    object-fit:fill;
+    width: 30rem;
+    height: 18rem;
+}
+.cics,.cted,.ccje,.chm,.cbea,.ca {
+    margin-left: 5%;
+    background-color: rgb(240, 240, 240);
+    font-family: 'Montserrat';
+    color: black;
+}
+.course-info  span{
+    
+    font-size: 1.5rem;
+    font-weight: 500;
+   
+}
+.course-info p{
+    color: #505050;
+    font-size: 0.9rem;
+   margin: 1% 0 0 ;
+}
+.course{
+    
+   font-weight: 500;
+   margin: 1% 0 2% ;
+    font-size: 1.1rem;
+}
+.course-info button{
+    
+    margin: 3% 0 0 ;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(55, 115, 255);
+    border-radius: 60px;
+    transition: all 0.1s ease 0s;
+}
+.course-info button:hover{
+    background-color: rgba(0, 76, 255, 0.9);
+    box-shadow: 0px 5px 5px rgba(200, 200, 200, 0.5);
+}
+
+
+/*FOOTER*/
+.footer-container{
+    font-family: 'Montserrat';
+    color: white;
+    background-color: #7f7f7f;
+    padding: 40px 40px 10px 40px;
+    
+}
+.footer-article{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.fb-links{
+    width: 35%;
+}
+.fb-links p,.footer-aboutus{
+    font-size: 1.5rem;
+    text-shadow: 0 0 1px rgb(0, 0, 0);
+    cursor:default;
+}
+.fb-links a{
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: rgb(203, 203, 203);
+}
+.fb-links a:hover{
+   text-decoration: underline;
+   color: white;
+}
+.project-info{
+    height: 11.4rem;
+    color: rgb(203, 203, 203);
+    font-size: 0.9rem;
+    width: 35%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.csu-website{
+    font-size: 1.5rem;
+    width: 30%;
+    height: 11.4rem;
+}
+.website a{
+    
+    margin-left: 10px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color:  rgb(203, 203, 203);
+}
+.website a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.footer-csu{
+    display: grid;
+    place-items: center;
+    width: 50%;
+    padding: 20px 20px 0 20px;
+}
+.footer-csu img{
+    width: 7%;
+}
+.footer-border{
+    margin-left: 3%;
+    margin-top: 2%;
+     border: 1px solid rgb(148, 148, 148);
+     width: 90rem;
+ }
+
+ .fa-facebook:hover{
+    color: rgb(0, 128, 255);
+ }
+ .fa-envelope:hover{
+    color:rgb(0, 255, 0);
+}
+ .qw{
+    margin-top:5%;
+ }
+
+ /*MEDIA QUERY*/
+
+ /*IPAD*/
+ @media (max-width: 1024px) {
+    .header li a {
+        font-size: 1rem;
+    }
+    .article1 p{
+        margin-top: 10%;
+        font-size: 2.8rem;
+    }
+    .article2{
+        width: 110%;
+    }
+    .article2 p{
+
+        font-size: 1.1rem;
+    }
+    .logo-div{
+        margin-top: 8.5rem;
+        height: 200px;
+    }
+    .logo-div img{
+        width: 150px;
+    }
+    .learning-img img{
+        width: 500px;
+    }
+    .learning-info h2{
+        font-size: 2rem;
+    }
+    .learning-info p{
+        font-size: 0.8rem;
+    }
+    .border{
+        width: 95%;
+    }
+    .fb-links p,.footer-aboutus,.csu-website p{
+        font-size: 1.2rem;
+    }
+    .fb-links a,.project-info p,.csu-website a{
+        font-size: 0.8rem;
+    }
+    
+ }
+ @media (max-width: 1285px){
+    .learning-info h2{
+      font-size:2rem;
+    }
+    .border{
+        width: 95%;
+    }
+ }
+ /*MOBILE DEVICES*/
+@media (max-width: 430px){
+    .links li a{
+        font-size: 10px;
+    }
+}
+@media (max-width:768px){
+
+    /*nav-bar*/
+    .links li a, .action-btn{
+       display: none;
+    }
+    /*HERO SECTION*/
+    .intro-container{
+        display: grid;
+        place-items: center;
+        height: 40%;
+    }
+
+    .article-div{
+        margin-top: 30%;
+        display: grid;
+        place-items: center;
+        width: 100%;
+    }
+    .article1{
+        width: 100%;
+       
+    }
+    .article1 p{
+        font-size: 26px;
+    }
+    .article1 p span{
+        margin-left: 18%;
+    }
+    .article2{
+        background-color: rgba(69, 68, 68, 0.3);
+        border-radius: 20px;
+        margin-right: 10px;
+        width: 80%;
+    }
+    .article2 p{
+        font-size:15px;
+    }
+    .logo-div{
+        margin-top: 10px;
+    }
+    /*OVERVIEW*/
+    .learn article{
+        display: grid;
+        place-items: center;
+    }
+    .learn img{
+        width: 200px;
+    }
+    .learning-info{
+        width: 70%;
+    }
+    .learning-info h2{
+        text-align: center;
+        font-size: 1.2rem;
+        margin: auto 2%;
+    }
+    /*LOGO*/
+    .logo-container{
+        margin-top: 10%;
+    }
+    .logo-img img{
+        width: 70px;
+    }
+    .border{
+        margin-bottom: 7%;
+    }
+    /*COURSES*/
+    .explore{
+        font-size: 35px;
+    }
+    .course-img img{
+        width: 95%;
+        border-radius: 10px;
+    }
+    /*FOOTER*/
+    .section1{
+        display: grid;
+        place-items: center;
+    }
+    .fb-links,.project-info,.csu-website{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .project-info{
+        height: 115px;
+    }
+    .footer-aboutus p{
+        font-size: 50px;
+    }
+    .csu-website p{
+
+    }
+}
